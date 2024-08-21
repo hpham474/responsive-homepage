@@ -43,6 +43,8 @@ main {
   margin: 1rem;
 }
 
+/* about me section */
+
 .about-me {
   display: flex;
   flex-direction: column;
@@ -66,9 +68,67 @@ h1 {
   font-size: 1rem;
 }
 
+.my-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
 .links {
   display: flex;
   flex-direction: row;
   justify-items: center;
   gap: 1rem;
+}
+
+/* my work section */
+
+.my-work h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.projects {
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+}
+
+.project {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+
+.project img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.project h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.project-links {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2rem 2rem;
+  align-items: center;
+}
+
+.project-links a {
+  margin: auto;
+}
+
+.project-text {
+  margin: 1rem;
+  margin-top: 0;
+  font-size: 0.75rem;
 }
