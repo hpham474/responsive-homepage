@@ -225,6 +225,22 @@ footer {
   fill: white;
 }
 
+/* animations */
+.project:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.links a:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.project-links a:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
 @media screen and (min-width: 600px) and (max-width: 1200px) {
   .image {
     float: left;
