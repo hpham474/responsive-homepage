@@ -39,8 +39,12 @@ body {
 }
 
 main {
-  max-width: 500px;
   margin: 1rem;
+}
+
+.about-me img {
+  width: 20vw;
+  min-width: 200px;
 }
 
 .background {
@@ -81,7 +85,7 @@ main {
   position: absolute;
   bottom: 1rem;
   left: 1rem;
-  z-index: 2;
+  z-index: 1;
 
   font-size: 3rem;
   font-weight: 500;
@@ -90,7 +94,6 @@ main {
 }
 
 .about-me img {
-  z-index: 1;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -182,7 +185,6 @@ footer {
 }
 
 .footer-content {
-  max-width: 500px;
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
@@ -221,4 +223,42 @@ footer {
 
 .footer-content svg g {
   fill: white;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .image {
+    float: left;
+    margin-top: -5rem;
+    margin-right: 1rem;
+  }
+  .about-me {
+    display: block;
+  }
+  .about-me-content {
+    display: block;
+    margin-left: 5rem;
+    margin-top: 5rem;
+  }
+  .about-me-content h1 {
+    text-align: center;
+  }
+  .image h2 {
+    text-wrap: nowrap;
+    top: 1rem;
+    left: 110%;
+  }
+  .about-me .links {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-me {
+    flex-direction: row;
+  }
+  .about-me h2 {
+    left: 50%;
+    transform: translateX(-50%);
+    text-wrap: nowrap;
+  }
 }
