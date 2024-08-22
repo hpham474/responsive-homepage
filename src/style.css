@@ -94,12 +94,12 @@ h1 {
   width: 100%;
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(302px, 1fr));
   justify-items: center;
 }
 
 .project {
-  max-width: 300px;
+  max-width: 302px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -108,6 +108,7 @@ h1 {
 }
 
 .project img {
+  align-self: center;
   border-radius: 1rem 1rem 0 0;
 }
 
